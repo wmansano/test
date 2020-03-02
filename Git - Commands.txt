@@ -1,0 +1,27 @@
+
+- Create new branch:
+
+git checkout --orphan <branchname>
+
+- Untrack files:
+
+git rm --cached -r .
+
+- Clean untracked files into the new branch
+
+git clean -fd
+
+
+
+
+
+- Revert to an specific commit and deleting everything after that:
+
+git reset --hard <commidId> && git clean -f
+
+
+
+- Taging version:
+Listing tags: 	git tag
+Adding tag: 	git tag v1.25
+Deleting tag :	git tag -d v1.25
